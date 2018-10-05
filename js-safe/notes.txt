@@ -1,0 +1,11 @@
+- dado uma senha CTF{blabla}
+- ele pega o ascii enconding da senha
+- calcula o sha-256 (= byte array)
+- ele faz o xor de cada um desses valores com uma sequencia (segredo.txt)
+- ele faz um or do resultado
+- se for 0, senha correta
+
+- basta usar a sequencia fixa como chave
+- busca no hash pra descobrir o valor
+
+- usando ela, obtemos a url router-ui.web.ctfcompetition.com

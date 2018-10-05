@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Dashboard Template for Bootstrap</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#devices">
+                <span data-feather="users"></span>
+                Devices
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#iot">
+                <span data-feather="home"></span>
+                Smart Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#firewall">
+                <span data-feather="shield"></span>
+                Firewall
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+          <div class="pt-3"/>
+
+          <h2 id="devices">Connected Devices</h2>
+          <div class="table-responsive">
+            <table class="table table-striped table-sm">
+              <thead>
+                <tr>
+                  <th>IP</th>
+                  <th>Hostname</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>192.168.178.51</td>
+                  <td>Smart Fridge 2000</td>
+                </tr>
+                <tr>
+                  <td>192.168.178.80</td>
+                  <td>Dusche Deluxe</td>
+                </tr>
+                <tr>
+                  <td>192.168.178.92</td>
+                  <td>CyberFlush</td>
+                </tr>
+                <tr>
+                  <td>192.168.178.96</td>
+                  <td>Intelligent Steamer (DMZ)</td>
+                </tr>
+                <tr>
+                  <td>192.168.178.103</td>
+                  <td>Media PC</td>
+                </tr>
+                <tr>
+                  <td>192.168.178.188</td>
+                  <td>Wynd</td>
+                </tr>
+                <tr>
+                  <td>192.168.178.197</td>
+                  <td>Google-Haus</td>
+                </tr>
+                <tr>
+                  <td>192.168.178.232</td>
+                  <td>PlantSpa (DMZ)</td>
+                </tr>
+                <tr>
+                  <td>192.168.178.233</td>
+                  <td>Polyfabric-minimalist solar radation blocking system</td>
+                </tr>
+                <tr>
+                  <td>192.168.178.241</td>
+                  <td>Foobanizer 9000 (DMZ)</td>
+                </tr>
+                <tr>
+                  <td>192.168.178.312</td>
+                  <td>Tempo-a-matic</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h2 id="iot">Google-Haus Credentials</h2>
+          <form>
+            <input type="password" value="CTF{Kao4pheitot7Ahmu}"/>
+            <button>Submit</button>
+          </form>
+          <div class="pt-3"/>
+          <h2 id="iot">Media PC Credentials</h2>
+          <form>
+            <input type="password" value="CTF{Kao4pheitot7Ahmu}"/>
+            <button>Submit</button>
+          </form>
+          <div class="pt-3"/>
+          <h4>Controls</h4>
+          <button class="btn">Prepare dinner</button>
+          <button class="btn">Start juicer</button>
+          <button class="btn">Open entrance door</button>
+          <button class="btn">Declog toilet</button>
+          <button class="btn">Clog toilet</button>
+          <button class="btn" onclick="disco();">Disco mode</button>
+          <button class="btn" onclick="flush();">Flush toilet</button>
+          <button class="btn">Walk the dog</button>
+          <button class="btn">Fridge self destruct</button>
+          <button class="btn">Start car</button>
+          <button class="btn" onclick="count();">Count to 100</button>
+          <button class="btn">Release the kraken</button>
+          <button class="btn" onclick="location = 'https://youtu.be/dQw4w9WgXcQ';">Random action</button>
+          <div class="pt-3"/>
+          Room temperature: <input type="range" min="-274" max="5505000" value="0" class="slider">
+          <div class="pt-3"/>
+          Shower temperature: <input type="range" min="-274" max="5505000" value="0" class="slider">
+          <div class="pt-3"/>
+          Toilet temperature: <input type="range" min="-274" max="5505000" value="0" class="slider">
+          <div class="pt-3"/>
+          Fridge temperature: <input type="range" min="-274" max="5505000" value="0" class="slider">
+          <div class="pt-3"/>
+          Outside temperature: <input type="range" min="-274" max="5505000" value="0" class="slider">
+
+          <div class="pt-3"/>
+          <h2 id="firewall">Firewall</h2>
+          Blocked exploitation attempts: <div id="exploit_attempts">0</div>
+        </main>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+    <script>
+    setInterval(()=>{
+      let el = document.getElementById('exploit_attempts');
+      let attempts = parseInt(el.innerText);
+      attempts += Math.random()*100000;
+      el.innerText = Math.floor(attempts);
+    }, 50);
+
+    function disco() {
+      setInterval(()=>{
+        document.body.style.background = '#' + Math.floor(Math.random()*(2**32)).toString(16);
+      }, 200);
+    }
+    function flush() {
+      new Audio("/static/flush.mp3").play();
+    }
+    function count() {
+      for (let i = 0; i < 100; i++) {
+        alert(i);
+      }
+    }
+    </script>
+  </body>
+</html>
