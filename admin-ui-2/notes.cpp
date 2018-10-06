@@ -1,0 +1,5 @@
+- pegar o binario
+- usar gdb, fuçar nas coisas e achar uma global chamada FLAG
+- ta tudo em octal
+- fuçar mais no gdb e perceber uma estranha variavel local chamada password q é \307\307\307\307..
+- no final é um one time pad com essa chave \307
