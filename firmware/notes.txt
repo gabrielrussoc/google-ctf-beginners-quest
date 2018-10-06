@@ -1,0 +1,2 @@
+- monta o file system
+- em / tem um gzip oculto
